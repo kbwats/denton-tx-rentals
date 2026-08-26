@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Denton, Lake Dallas &amp; Corinth, TX Houses for Rent — 3BD/2BA Near I-35E, Under $2,300</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
   :root {
     --ink: #1c1917;
@@ -34,6 +36,38 @@
     font-size: 14px;
     line-height: 1.5;
   }
+  .tabs {
+    max-width: 1200px;
+    margin: 18px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--sub);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    font-family: inherit;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+  #map { max-width: 1200px; margin: 16px auto 40px; padding: 0 24px; }
+  #mapEl { height: 640px; width: 100%; border-radius: 10px; border: 1px solid var(--line); }
+  .leaflet-popup-content { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .map-popup { width: 190px; }
+  .map-popup img { width: 100%; height: 110px; object-fit: cover; border-radius: 6px; display:block; margin-bottom:6px; }
+  .map-popup .mp-city { display:inline-block; background: rgba(180,83,9,0.12); color: var(--accent); font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+  .map-popup .mp-price { font-weight: 700; font-size: 14px; }
+  .map-popup .mp-addr { font-size: 12px; color: var(--sub); margin: 2px 0 6px; }
+  .map-popup a { font-size: 12.5px; font-weight: 600; color: var(--accent); text-decoration: none; }
   .controls {
     max-width: 1200px;
     margin: 0 auto 8px;
@@ -181,6 +215,11 @@
   <h1>Denton, Lake Dallas &amp; Corinth, TX &mdash; 3BD / 2BA Houses for Rent Near I-35E, Under $2,300/mo</h1>
   <p>22 matching houses, sourced from Apartments.com on Aug 26, 2026. Sorted by price (low to high). This list expands the original Denton-only search to also include Lake Dallas and Corinth, and is limited to addresses close to the I-35E corridor (see methodology in the footer). Data pulled directly from each property's listing page &mdash; deposit terms, availability, and phone numbers may change, so confirm directly with the property before applying.</p>
 </header>
+<div class="tabs">
+  <button class="tab-btn active" data-tab="list">List</button>
+  <button class="tab-btn" data-tab="map">Map</button>
+</div>
+<div class="tab-panel active" id="panel-list">
 <div class="controls">
   <label for="maxprice">Max price:</label>
   <select id="maxprice" onchange="filterCards()">
@@ -590,9 +629,14 @@
       </div>
     </div>
 </div>
+</div>
+<div class="tab-panel" id="panel-map">
+  <div id="map"><div id="mapEl"></div></div>
+</div>
 <footer>
   Sources: Apartments.com listing search (3 bedrooms &middot; 2+ baths &middot; houses &middot; under $2,300/mo) centered on Corinth, TX &mdash; a small city split by I-35E &mdash; which returns results across the highway corridor spanning Denton, Corinth, and Lake Dallas. A parallel search centered on Lake Dallas confirmed no additional genuine Lake Dallas listings beyond the two already captured. Results were limited to Denton, Lake Dallas, and Corinth addresses; spillover into Argyle, Krum, Shady Shores, Oak Point, and Lewisville was excluded to keep this list scoped to the requested cities. Denton results outside ZIP codes 76208 and 76210 (the two Denton ZIPs adjacent to I-35E) were not included, since they fall further from the highway. One listing (110 Lake Vista Dr, Lake Dallas) was excluded after inspection showed it was a vacant lot for a mobile home, not a house. One listing (4525 Colosseum Wy) appeared twice under different phone numbers &mdash; the more complete listing was kept. Several addresses (4525 Colosseum Wy, 3816 Carmel Villas Dr, 4725 Pantheon Wy, and five more Carmel Villas addresses at higher price points) are separate homes within the same Carmel Villas build-to-rent community and are listed individually since each has its own street address.
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 function filterCards() {
   const max = parseInt(document.getElementById('maxprice').value, 10);
@@ -606,6 +650,92 @@ function filterCards() {
   document.getElementById('count').textContent = shown + ' of 22 shown';
 }
 filterCards();
+
+// ---------- Map data ----------
+const mapListings = [
+  {city:"Denton", address:"4525 Colosseum Wy, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/eFS719VnQ1nkVkL49VktW-nvwUQXnocfOmqPBEbj81I/111/4525-colosseum-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4525-colosseum-wy-denton-tx/j4j7bj5/", lat:33.1733, lng:-97.0828},
+  {city:"Denton", address:"3816 Carmel Villas Dr, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/3816-carmel-villas-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3816-carmel-villas-dr-denton-tx/29qvgsb/", lat:33.17226, lng:-97.08182},
+  {city:"Denton", address:"4725 Pantheon Wy, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4725-pantheon-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4725-pantheon-wy-denton-tx/0q0n6c0/", lat:33.1729, lng:-97.08181},
+  {city:"Corinth", address:"3110 Brett Rd, Corinth, TX 76210", price:2095, photo:"https://images1.apartments.com/i2/1K_sNl0u_GFTWtY2D9W6ouiPbTE5K33-kr1C2E8zkhI/111/3110-brett-rd-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/3110-brett-rd-corinth-tx/zfwpbpx/", lat:33.1413, lng:-97.0596},
+  {city:"Corinth", address:"1709 Copper Leaf Dr, Corinth, TX 76210", price:2100, photo:"https://images1.apartments.com/i2/ypwHNlHZvUhKDZGr7CiBU_vPh7DzZRl8ZvWrxHa4b6s/111/1709-copper-leaf-dr-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/1709-copper-leaf-dr-corinth-tx/ld3kxsd/", lat:33.14301, lng:-97.08376},
+  {city:"Denton", address:"3700 Camino Real Trail, Denton, TX 76208", price:2100, photo:"https://images1.apartments.com/i2/kSGD6WrE9zxyLdBDy7CGtq3A1hOlKLA7YYleKsP4BTI/111/3700-camino-real-trail-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3700-camino-real-trail-denton-tx/ncdckrq/", lat:33.17327, lng:-97.07789},
+  {city:"Lake Dallas", address:"5300 Duchess Ct, Lake Dallas, TX 75065", price:2100, photo:"", link:"https://www.apartments.com/5300-duchess-ct-lake-dallas-tx/zflvb6x/", lat:33.12485, lng:-97.02779},
+  {city:"Denton", address:"3343 Lipizzan Dr, Denton, TX 76210", price:2165, photo:"https://images1.apartments.com/i2/qxVryqcbaRPyTG7C3gWTrR1vhD9rm-mcLSVljczyWLw/111/3343-lipizzan-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3343-lipizzan-dr-denton-tx/b2dc34c/", lat:33.15707, lng:-97.09866},
+  {city:"Denton", address:"4717 Colosseum Wy, Denton, TX 76208", price:2175, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4717-colosseum-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4717-colosseum-wy-denton-tx/117qg56/", lat:33.17327, lng:-97.08192},
+  {city:"Denton", address:"5116 Claudia Dr, Denton, TX 76208", price:2175, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/5116-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/5116-claudia-dr-denton-tx/5ecbdyq/", lat:33.17322, lng:-97.07964},
+  {city:"Denton", address:"4812 Claudia Dr, Denton, TX 76208", price:2200, photo:"https://images1.apartments.com/i2/UFgCSOLnvghuz-KjkpWl-fGz2djnsOvH8Cgh6ogwzYc/111/4812-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4812-claudia-dr-denton-tx/8n9x4x1/", lat:33.17329, lng:-97.08123},
+  {city:"Denton", address:"2812 Paddock Way, Denton, TX 76210", price:2200, photo:"https://images1.apartments.com/i2/YehVGpa_9ei2uvba9iBV9OMwdla0QmdwLNRYpnR6ars/111/2812-paddock-way-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/2812-paddock-way-denton-tx/k16slv8/", lat:33.15134, lng:-97.10441},
+  {city:"Corinth", address:"3024 Mason Ave, Corinth, TX 76210", price:2200, photo:"https://images1.apartments.com/i2/uJOCjDkj1NjeWoDnd_xaK__kLKMmX1S8k30zgllLGB8/111/3024-mason-ave-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/3024-mason-ave-corinth-tx/4vdg15j/", lat:33.14174, lng:-97.06087},
+  {city:"Corinth", address:"3305 Fairview Dr, Corinth, TX 76210", price:2200, photo:"", link:"https://www.apartments.com/3305-fairview-dr-corinth-tx/hblvhk2/", lat:33.13931, lng:-97.05284},
+  {city:"Denton", address:"6020 Moor Hen Drive, Denton, TX 76208", price:2220, photo:"https://images1.apartments.com/i2/pPfpZALd4UYWP87p_OpRVJUlX35BPLVNFRczXXarW9A/111/6020-moor-hen-drive-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/6020-moor-hen-drive-denton-tx/p7rcbqr/", lat:33.17021, lng:-97.07538},
+  {city:"Denton", address:"5004 Claudia Dr, Denton, TX 76208", price:2225, photo:"https://images1.apartments.com/i2/x08J0WkXHEnHWRqA0ApMmdyyUsdkzh9WHnNO6SIlkvY/111/5004-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/5004-claudia-dr-denton-tx/pt0s0gr/", lat:33.17325, lng:-97.08034},
+  {city:"Denton", address:"4912 Claudia Dr, Denton, TX 76208", price:2225, photo:"https://images1.apartments.com/i2/HreeWeGYhvcD480UgwCLNfupiPCBl3bZOp4p4RMACQw/111/4912-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4912-claudia-dr-denton-tx/n96zyyp/", lat:33.17326, lng:-97.08072},
+  {city:"Denton", address:"4713 Fox Sedge Ln, Denton, TX 76208", price:2250, photo:"https://images1.apartments.com/i2/AjwK8GeJ0L7p4RnSC4_ZXwks_iOHpjuAwqKUsvx29Wc/111/4713-fox-sedge-ln-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4713-fox-sedge-ln-denton-tx/kr8efzb/", lat:33.16813, lng:-97.07301},
+  {city:"Corinth", address:"2706 Parkview Dr, Corinth, TX 76210", price:2295, photo:"https://images1.apartments.com/i2/xc5KegLLdVijV15K5aQfJvUxgwvxhgTuCo-o-wl8x9k/111/2706-parkview-dr-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/2706-parkview-dr-corinth-tx/9wnv804/", lat:33.13721, lng:-97.05674},
+  {city:"Denton", address:"3913 Chimney Rock Dr, Denton, TX 76210", price:2300, photo:"https://images1.apartments.com/i2/kqKVpYHPImQkW-WW4SbfT8EC_Dj7M6NF5jExvDtbwZE/111/3913-chimney-rock-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3913-chimney-rock-dr-denton-tx/5lsczvq/", lat:33.16313, lng:-97.10264},
+  {city:"Corinth", address:"2720 Windstone Way, Corinth, TX 76210", price:2300, photo:"https://images1.apartments.com/i2/K6elwGcprIbR15AEoUXkN5BEpypn8RU8SN3LZRJtAnA/111/2720-windstone-way-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/2720-windstone-way-corinth-tx/kw5fsjb/", lat:33.15544, lng:-97.068},
+  {city:"Denton", address:"4813 Wasatch Dr, Denton, TX 76208", price:2300, photo:"https://images1.apartments.com/i2/G54233hmOOnrjtTXGFcgU3S9BU_j1h3VUmayXhsjZpE/111/4813-wasatch-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4813-wasatch-dr-denton-tx/m2sp1qj/", lat:33.16769, lng:-97.078}
+];
+
+function fmtPrice(p) { return '$' + p.toLocaleString() + '/mo'; }
+
+// ---------- Tabs ----------
+function initTabs() {
+  const btns = document.querySelectorAll('.tab-btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+      if (btn.dataset.tab === 'map' && window.__leafletMap) {
+        setTimeout(() => {
+          window.__leafletMap.invalidateSize();
+          if (window.__mapBounds && window.__mapBounds.length) {
+            window.__leafletMap.fitBounds(window.__mapBounds, {padding: [30,30]});
+          }
+        }, 50);
+      }
+    });
+  });
+}
+
+// ---------- Map ----------
+function initMap() {
+  const map = L.map('mapEl').setView([33.16, -97.08], 12);
+  window.__leafletMap = map;
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19
+  }).addTo(map);
+
+  const bounds = [];
+  mapListings.forEach(l => {
+    const marker = L.circleMarker([l.lat, l.lng], {
+      radius: 9, fillColor: '#b45309', color: '#fff', weight: 2, fillOpacity: 0.95
+    }).addTo(map);
+    bounds.push([l.lat, l.lng]);
+
+    const imgTag = l.photo ? `<img src="${l.photo}" alt="${l.address}" onerror="this.style.display='none'">` : '';
+    const popupHTML = `
+      <div class="map-popup">
+        ${imgTag}
+        <div class="mp-city">${l.city}</div>
+        <div class="mp-price">${fmtPrice(l.price)}</div>
+        <div class="mp-addr">${l.address}</div>
+        <a href="${l.link}" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>`;
+    marker.bindPopup(popupHTML, {closeButton: true});
+    marker.on('mouseover', () => marker.openPopup());
+    marker.on('click', () => { window.open(l.link, '_blank'); });
+  });
+  window.__mapBounds = bounds;
+  if (bounds.length) map.fitBounds(bounds, {padding: [30,30]});
+}
+
+initTabs();
+initMap();
+
 </script>
 </body>
 </html>
