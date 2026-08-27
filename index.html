@@ -1316,7 +1316,7 @@ function filterCards() {
     if (p <= max) { c.style.display = ''; shown++; }
     else { c.style.display = 'none'; }
   });
-  document.getElementById('count').textContent = shown + ' of 22 shown';
+  document.getElementById('count').textContent = shown + ' of ' + cards.length + ' shown';
 }
 filterCards();
 
