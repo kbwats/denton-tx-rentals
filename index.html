@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Denton, Lake Dallas &amp; Corinth, TX Houses for Rent — 3BD/2BA Near I-35E, Under $2,300</title>
+<title>Denton, Lake Dallas &amp; Corinth, TX Houses for Rent — 3BD/2BA Near Major Highways, Under $2,300</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
   :root {
@@ -212,8 +212,8 @@
 </head>
 <body>
 <header>
-  <h1>Denton, Lake Dallas &amp; Corinth, TX &mdash; 3BD / 2BA Houses for Rent Near I-35E, Under $2,300/mo</h1>
-  <p>22 matching houses, sourced from Apartments.com on Aug 26, 2026. Sorted by price (low to high). This list expands the original Denton-only search to also include Lake Dallas and Corinth, and is limited to addresses close to the I-35E corridor (see methodology in the footer). Data pulled directly from each property's listing page &mdash; deposit terms, availability, and phone numbers may change, so confirm directly with the property before applying.</p>
+  <h1>Denton, Lake Dallas &amp; Corinth, TX &mdash; 3BD / 2BA Houses for Rent Near Major Highways, Under $2,300/mo</h1>
+  <p>59 matching houses, sourced from Apartments.com on Aug 26, 2026. Sorted by price (low to high). This list combines the full Denton search with Lake Dallas and Corinth results, limited to addresses reasonably close to I-35, I-35E, I-35W, US 377, or US 380. Listings whose Apartments.com page had gone stale (redirecting to a generic search rather than the specific property) were excluded as likely no longer available. Data pulled directly from each property's listing page &mdash; deposit terms, availability, and phone numbers may change, so confirm directly with the property before applying.</p>
 </header>
 <div class="tabs">
   <button class="tab-btn active" data-tab="list">List</button>
@@ -224,6 +224,9 @@
   <label for="maxprice">Max price:</label>
   <select id="maxprice" onchange="filterCards()">
     <option value="9999">No limit</option>
+    <option value="1800">$1,800</option>
+    <option value="1900">$1,900</option>
+    <option value="2000">$2,000</option>
     <option value="2100">$2,100</option>
     <option value="2200">$2,200</option>
     <option value="2250">$2,250</option>
@@ -232,409 +235,1075 @@
   <span class="count" id="count"></span>
 </div>
 <div class="grid" id="grid">
-    <div class="card" data-price="2045">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/eFS719VnQ1nkVkL49VktW-nvwUQXnocfOmqPBEbj81I/111/4525-colosseum-wy-denton-tx-primary-photo.jpg" alt="4525 Colosseum Wy, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,045/mo</div>
-      </div>
-      <div class="content">
-        <h3>4525 Colosseum Wy, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Part of the Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse. One of three Carmel Villas addresses in this list.</div>
-        <div class="row"><span class="label">Phone</span> (817) 783-9505</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4525-colosseum-wy-denton-tx/j4j7bj5/" target="_blank" rel="noopener">View Listing &rarr;</a>
+        <div class="card" data-price="1750">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/sxt3DCF-SsMEkb1sFIhLB5a9wa-t6tZ_0H4Ms73Ag8Y/115/404-pace-dr-denton-tx-building-photo.jpg" alt="404 Pace Dr, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,750/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>404 Pace Dr, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1156 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,750 deposit</div>
+            <div class="row details"><span class="label">Details</span> One-story. Dedicated dining area, brick wood-burning fireplace, dual primary closets, shady backyard, no HOA.</div>
+            <div class="row"><span class="label">Phone</span> (940) 535-8880</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/404-pace-dr-denton-tx/ge8tvxy/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1769">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/aM2odyj0-qdNEyOYRzNFL_EzAxL61d9CjyJUt7EiPz0/115/3307-hummingbird-ln-denton-tx-building-photo.jpg" alt="3307 Hummingbird Ln, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,769/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3307 Hummingbird Ln, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1203 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Holding deposit of $250/home, credited to first month&#x27;s rent after move-in, refunded if application denied, forfeited if move-in canceled by approved applicant.</div>
+            <div class="row details"><span class="label">Details</span> Managed by Tricon Residential. Access to &quot;Tricon Vantage&quot; resident program.</div>
+            <div class="row"><span class="label">Phone</span> (817) 835-6543</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3307-hummingbird-ln-denton-tx/djcxz0h/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1775">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/IIcmhvYnWJehGUdg6YA34FORwk0yImYh_YaYyxDiuL4/115/711-n-carroll-blvd-denton-tx-building-photo.jpg" alt="711 N Carroll Blvd, Denton, TX 76201" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,775/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>711 N Carroll Blvd, Denton, TX 76201</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1371 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 14</div>
+            <div class="row"><span class="label">Deposit</span> $1,775 deposit</div>
+            <div class="row details"><span class="label">Details</span> 2 weeks free rent move-in special. Spacious backyard, stylish interior, central Denton location.</div>
+            <div class="row"><span class="label">Phone</span> (972) 480-8280</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/711-n-carroll-blvd-denton-tx/vxm43td/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1855">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/w25AhRres1pzwTPgaMkN6-0H-JpE7RzdLELf_GzPNhw/115/2800-terry-ct-denton-tx-building-photo.jpg" alt="2800 Terry Ct, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,855/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2800 Terry Ct, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1200 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 14</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by (Progress Residential-style) first-come first-served, holding fee required. Currently occupied, available soon.</div>
+            <div class="row"><span class="label">Phone</span> (817) 646-1648</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2800-terry-ct-denton-tx/zdbxbdw/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1880">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/REOuDUs_djpzJe9j_DB4LUTVgTx9P-vGVnKj7UUMcVA/115/809-pace-dr-denton-tx-building-photo.jpg" alt="809 Pace Dr, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,880/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>809 Pace Dr, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1498 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Lease signed by all applicants and security deposit collected before reservation. Move-in special: rent by 8/17/26 for $500 off.</div>
+            <div class="row details"><span class="label">Details</span> Pet-friendly, smart home features.</div>
+            <div class="row"><span class="label">Phone</span> (817) 482-3502</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/809-pace-dr-denton-tx/2kkt4l8/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1895">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/3LCif2HQu87UpnczhiN-Oy893-q42Jay3cEVyyOEym8/115/409-jagoe-st-denton-tx-building-photo.jpg" alt="409 Jagoe St, Denton, TX 76201" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,895/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>409 Jagoe St, Denton, TX 76201</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1328 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 7</div>
+            <div class="row"><span class="label">Deposit</span> $1,895 deposit</div>
+            <div class="row details"><span class="label">Details</span> Walking distance to UNT.</div>
+            <div class="row"><span class="label">Phone</span> (940) 594-0216</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/409-jagoe-st-denton-tx/4f1927l/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1900">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/94umv5wYYCoAF8h4Wa_R1p1ydf5cR_WCoxgxfyLhUNE/115/1902-lee-dr-denton-tx-building-photo.jpg" alt="1902 Lee Dr, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,900/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1902 Lee Dr, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1182 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Nice 3-2-1 home off McKinney &amp; Audra, across from Ann Windle school, near new county courthouse. Open living/dining/kitchen, small fenced back yard, covered side patio, 1-car garage w/opener, stove/DW/microwave/fridge w/icemaker, central HVAC, mini-blinds, fireplace.</div>
+            <div class="row"><span class="label">Phone</span> (817) 510-8451</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1902-lee-dr-denton-tx/p8dcp4t/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1950">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/B3KaSp7KIJdXkOqnRoLfRpozYidAluZYI1Kj9T0OIoc/115/1108-springcreek-dr-denton-tx-building-photo.jpg" alt="1108 Springcreek Dr, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,950/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1108 Springcreek Dr, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1380 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,950 deposit</div>
+            <div class="row details"><span class="label">Details</span> 12-month lease. Freshly updated, new fencing and appliances, mature trees.</div>
+            <div class="row"><span class="label">Phone</span> <em>Not published &mdash; use listing link</em></div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1108-springcreek-dr-denton-tx/9pz2qh4/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1950">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/Pd0CM6oNJkBdr9IQr9rnwZ0C5OT-qJjeqDG5UN-MNhs/115/2200-lookout-ln-denton-tx-building-photo.jpg" alt="2200 Lookout Ln, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,950/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2200 Lookout Ln, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1387 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 1</div>
+            <div class="row"><span class="label">Deposit</span> $1,950 deposit</div>
+            <div class="row details"><span class="label">Details</span> Corner lot, open floorplan, woodburning fireplace. Near North Lakes Park, Rayzor Ranch, incoming H-E-B.</div>
+            <div class="row"><span class="label">Phone</span> (940) 368-2160</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2200-lookout-ln-denton-tx/kssvksc/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1950">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/puHRGY2y5DJAaP1dob6pPuDCxueexpxkoz96nSO9LJA/115/1706-wisteria-st-denton-tx-building-photo.jpg" alt="1706 Wisteria St, Denton, TX 76205" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,950/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1706 Wisteria St, Denton, TX 76205</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1493 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,950 deposit</div>
+            <div class="row details"><span class="label">Details</span> One-story, subdivision across highway from UNT. Two dining areas, large fenced backyard, 2-car garage, fridge included.</div>
+            <div class="row"><span class="label">Phone</span> (940) 535-8880</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1706-wisteria-st-denton-tx/8jbkdg3/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1960">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/vP5Ok_X2mUnoawyeFjPM9nlaKvAdFnPvWal4etcxebg/115/2308-arrowhead-dr-denton-tx-building-photo.jpg" alt="2308 Arrowhead Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,960/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2308 Arrowhead Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1413 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Open entryway/covered porch, tile &amp; LVP flooring living area, modern kitchen.</div>
+            <div class="row"><span class="label">Phone</span> (713) 321-2805</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2308-arrowhead-dr-denton-tx/68p68dv/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1980">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/wYUhSvbqI9eIsj0Qz0MdIOUAJIrsYupS881pGx-cZ5A/115/3400-beatriz-dr-denton-tx-building-photo.jpg" alt="3400 Beatriz Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,980/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3400 Beatriz Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1356 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 24</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by Progress Residential. Priced to rent, move-in ready soon.</div>
+            <div class="row"><span class="label">Phone</span> (817) 670-3344</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3400-beatriz-dr-denton-tx/r81h6j0/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1995">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/G17nqyPrcbiOs9kTE1uwOo4Mctoku3SJPf9NCjOJ0BY/115/5301-zara-dr-denton-tx-building-photo.jpg" alt="5301 Zara Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,995/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>5301 Zara Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1597 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,995 deposit</div>
+            <div class="row details"><span class="label">Details</span> Backs to a farm greenbelt, extended patio w/awning, large fenced backyard, corner lot.</div>
+            <div class="row"><span class="label">Phone</span> (817) 797-7452</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/5301-zara-dr-denton-tx/l9qp74e/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1995">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/VL0NsmS-BF-ZtQBzv340fLRw3fU_YpDFCi4KzDLH8pI/115/3008-anysa-ln-denton-tx-building-photo.jpg" alt="3008 Anysa Ln, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,995/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3008 Anysa Ln, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1478 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,995 deposit</div>
+            <div class="row details"><span class="label">Details</span> Corner lot. Plank flooring in living room, vaulted ceilings, covered back porch, wood-burning fireplace. Close to TWU, UNT, downtown Square.</div>
+            <div class="row"><span class="label">Phone</span> (940) 535-8880</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3008-anysa-ln-denton-tx/4frt6nh/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1995">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/B9L62IFsUbnMoB-97OtAYfJ5fJbOsYoLEu-5zUmsZSQ/115/1103-savage-dr-denton-tx-building-photo.jpg" alt="1103 Savage Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,995/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1103 Savage Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1768 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,995 deposit</div>
+            <div class="row details"><span class="label">Details</span> 3-2-2, formal front dining area, brick fireplace living room.</div>
+            <div class="row"><span class="label">Phone</span> (469) 383-6649</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1103-savage-dr-denton-tx/sw3l2r5/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="1995">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/G9Vq0T9Ggm0vH9VgJ0bWi9C4ctTq3NDgC1fie6ngxVY/115/2809-newport-ave-denton-tx-building-photo.jpg" alt="2809 Newport Ave, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$1,995/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2809 Newport Ave, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1179 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $1,995 deposit</div>
+            <div class="row details"><span class="label">Details</span> 2-car garage, open-concept living/dining, large private backyard w/shed. Near I-35.</div>
+            <div class="row"><span class="label">Phone</span> (469) 383-6649</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2809-newport-ave-denton-tx/eg0scdm/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2000">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/5mTR0qFmoeSjOso1flG9iXIX_WkGCYT9xbztooj-LZc/118/2504-liberty-ln-denton-tx-building-photo.jpg" alt="2504 Liberty Ln, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,000/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2504 Liberty Ln, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1212 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 15</div>
+            <div class="row"><span class="label">Deposit</span> $2,000 deposit</div>
+            <div class="row details"><span class="label">Details</span> Private landlord (Property Id 1167488). Dishwasher, fenced yard, garage, pet-friendly.</div>
+            <div class="row"><span class="label">Phone</span> (940) 535-7201</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2504-liberty-ln-denton-tx/vq4f63d/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2000">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/sWVbkgYB2vp-L4lm1TL-R5mFhurTM7L6G_wgTK376zc/115/1417-copper-ridge-st-denton-tx-building-photo.jpg" alt="1417 Copper Ridge St, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,000/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1417 Copper Ridge St, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1669 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $2,100 deposit</div>
+            <div class="row details"><span class="label">Details</span> Two distinct living areas incl. media room with built-in entertainment center.</div>
+            <div class="row"><span class="label">Phone</span> (940) 594-7253</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1417-copper-ridge-st-denton-tx/x02rd2m/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2000">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/CdnOJaqWyVDg8Hee9uAfWgRr4c5qFvGZHLO8rdKXUmE/115/1700-kendolph-dr-denton-tx-building-photo.jpg" alt="1700 Kendolph Dr, Denton, TX 76205" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,000/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1700 Kendolph Dr, Denton, TX 76205</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1000 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 7</div>
+            <div class="row"><span class="label">Deposit</span> $2,000 deposit</div>
+            <div class="row details"><span class="label">Details</span> New construction, blocks from UNT stadium, no HOA. Vaulted/9ft ceilings, bright open living.</div>
+            <div class="row"><span class="label">Phone</span> (214) 727-0686</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1700-kendolph-dr-denton-tx/2ljxcl9/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2015">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/COOPQkf0Q9QSbIM45K8cr6mxmzYrnRRT4ZYMQTRkPEc/115/3816-yellowstone-pl-denton-tx-building-photo.jpg" alt="3816 Yellowstone Pl, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,015/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3816 Yellowstone Pl, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1597 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 14</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by Progress Residential. First-come first-served, holding fee required.</div>
+            <div class="row"><span class="label">Phone</span> (817) 541-7253</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3816-yellowstone-pl-denton-tx/8mqlzk0/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2045">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/eFS719VnQ1nkVkL49VktW-nvwUQXnocfOmqPBEbj81I/115/4525-colosseum-wy-denton-tx-building-photo.jpg" alt="4525 Colosseum Wy, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,045/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4525 Colosseum Wy, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1184 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 783-9505</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4525-colosseum-wy-denton-tx/j4j7bj5/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2045">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/3816-carmel-villas-dr-denton-tx-building-photo.jpg" alt="3816 Carmel Villas Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,045/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3816 Carmel Villas Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1184 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (469) 373-7643</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3816-carmel-villas-dr-denton-tx/29qvgsb/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2050">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/sLoGxltNJgimk04Y8OfcFmpbGnachs_kZQGOLc3KLSw/115/2945-stockton-st-denton-tx-building-photo.jpg" alt="2945 Stockton St, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,050/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2945 Stockton St, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1564 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 21</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by Progress Residential. First-come first-served, holding fee required.</div>
+            <div class="row"><span class="label">Phone</span> (817) 767-4135</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2945-stockton-st-denton-tx/bq2hkcc/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2095">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/1K_sNl0u_GFTWtY2D9W6ouiPbTE5K33-kr1C2E8zkhI/111/3110-brett-rd-corinth-tx-primary-photo.jpg" alt="3110 Brett Rd, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,095/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>3110 Brett Rd, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,836 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 11</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Open-concept layout, large eat-in kitchen with island, formal dining, family room with fireplace, split-bedroom floor plan.</div>
+            <div class="row"><span class="label">Phone</span> (214) 558-6488</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3110-brett-rd-corinth-tx/zfwpbpx/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/fG4TWrb0GdzakJvYUgLX8QLPrnZpuGAi4dFWRtzHoOY/115/7912-canoe-ridge-ln-denton-tx-building-photo.jpg" alt="7912 Canoe Ridge Ln, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>7912 Canoe Ridge Ln, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1701 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $2,100 deposit</div>
+            <div class="row details"><span class="label">Details</span> 10-month lease option. Near McNair Elementary &amp; Guyer High School. HOA pool/playground, park with trails, Wriggley Park nearby.</div>
+            <div class="row"><span class="label">Phone</span> <em>Not published &mdash; use listing link</em></div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/7912-canoe-ridge-ln-denton-tx/ql8tbhx/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/A6pOa4zVqWhPw6txQ_EeRzdvPas5aYbnjNGgZGUYwuM/115/3500-cricket-dr-denton-tx-building-photo.jpg" alt="3500 Cricket Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3500 Cricket Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1637 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Zero deposit option available.</div>
+            <div class="row details"><span class="label">Details</span> Built by Historymaker in 2020, near-new. Near university, parks, rec center, golf range, minutes from Denton Square.</div>
+            <div class="row"><span class="label">Phone</span> 817-541-1180</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3500-cricket-dr-denton-tx/9b5ene5/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/si2/9EPtjjfbjVg48oc_TL58mMDPaY-Ph6HujW-fFDvTq90TxJVu9BPEQjRU1CT9W4lx/117/image.jpg" alt="825 Savage Dr, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>825 Savage Dr, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1173 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Denton ISD schools.</div>
+            <div class="row"><span class="label">Phone</span> (469) 449-3403</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/825-savage-dr-denton-tx/eprvt9p/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/kSGD6WrE9zxyLdBDy7CGtq3A1hOlKLA7YYleKsP4BTI/111/3700-camino-real-trail-denton-tx-primary-photo.jpg" alt="3700 Camino Real Trail, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3700 Camino Real Trail, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1,812 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Two-story, all bedrooms upstairs for privacy from main living areas, second upstairs living area suitable as game room, media room, or office.</div>
+            <div class="row"><span class="label">Phone</span> (817) 881-2294</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3700-camino-real-trail-denton-tx/ncdckrq/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/ypwHNlHZvUhKDZGr7CiBU_vPh7DzZRl8ZvWrxHa4b6s/111/1709-copper-leaf-dr-corinth-tx-primary-photo.jpg" alt="1709 Copper Leaf Dr, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>1709 Copper Leaf Dr, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,893 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Open floorplan, master suite with double vanities, separate shower and garden tub, new carpet.</div>
+            <div class="row"><span class="label">Phone</span> (972) 393-9604</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1709-copper-leaf-dr-corinth-tx/ld3kxsd/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2100">
+          <div class="photo-wrap">
+            <img src="https://via.placeholder.com/400x260?text=No+Photo" alt="5300 Duchess Ct, Lake Dallas, TX 75065" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,100/mo</div>
+            <div class="city-flag flag-lake-dallas">Lake Dallas</div>
+          </div>
+          <div class="content">
+            <h3>5300 Duchess Ct, Lake Dallas, TX 75065</h3>
+            <div class="specs">3 bed / 3 bath &middot; 1,302 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Oct 1</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Tile flooring throughout, granite countertops, large living room, covered back patio, move-in ready.</div>
+            <div class="row"><span class="label">Phone</span> (972) 977-1538</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/5300-duchess-ct-lake-dallas-tx/zflvb6x/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2105">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/vL2Km585eDkL4YIsrDyTV5P72gzSe05t_ch9-5j4zsc/115/3312-bent-creek-dr-denton-tx-building-photo.jpg" alt="3312 Bent Creek Dr, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,105/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3312 Bent Creek Dr, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1515 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 24</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> First-come, first-served; holding fee required to reserve. Currently occupied, available soon.</div>
+            <div class="row"><span class="label">Phone</span> (817) 646-7931</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3312-bent-creek-dr-denton-tx/xbzgjmn/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2140">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/7bRdovVym3BONM_rdnuFnRWXFQZ0PuD-fCFGZUnnq8E/115/2325-northway-denton-tx-building-photo.jpg" alt="2325 Northway, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,140/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2325 Northway, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1477 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 21</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by Progress Residential. Currently occupied, available soon.</div>
+            <div class="row"><span class="label">Phone</span> (817) 761-4695</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2325-northway-denton-tx/p8ez0st/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2145">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/FCRFYFq7R61yNE2CXYE7vZMkra1w7zzFTS_p6gQ2D9I/115/2027-cherrywood-ln-denton-tx-building-photo.jpg" alt="2027 Cherrywood Ln, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,145/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2027 Cherrywood Ln, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1249 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 17</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Managed by Progress Residential. Currently occupied, available soon.</div>
+            <div class="row"><span class="label">Phone</span> (817) 391-7526</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2027-cherrywood-ln-denton-tx/hdm18p2/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2150">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/4OkwIrplY4EVg7O7BiEaD4FPF-kQsTTNVze126ZGS6g/118/canvas-at-denton-rental-homes-denton-tx-building-photo.jpg" alt="1509 Canvas Way, Denton, TX 76205" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,150/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1509 Canvas Way, Denton, TX 76205</h3>
+            <div class="specs">3 bed / 2 bath &middot; varies</div>
+            <div class="row"><span class="label">Available</span> Contact for availability</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Build-to-rent community with 2, 3 &amp; 4-bedroom floorplans. Price shown ($2,150) is for the 3-bed/2-bath plan. Community amenities: private patios/yards, in-home washer/dryer, swimming pool, dog park.</div>
+            <div class="row"><span class="label">Phone</span> (940) 477-9605</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/canvas-at-denton-rental-homes-denton-tx/fxrtt5v/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2150">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/t-5Kt1ZI2EmQHjkQNHAacml4d4ueP7K3Pg-YsJFv4A0/115/5301-tartan-cir-denton-tx-building-photo.jpg" alt="5301 Tartan Cir, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,150/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>5301 Tartan Cir, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1568 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $2,150 deposit</div>
+            <div class="row details"><span class="label">Details</span> Quiet established neighborhood. Open-concept living/dining/kitchen, split-bedroom layout, wood-fenced backyard with covered patio.</div>
+            <div class="row"><span class="label">Phone</span> (940) 595-1378</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/5301-tartan-cir-denton-tx/x7qbenn/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2165">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/qxVryqcbaRPyTG7C3gWTrR1vhD9rm-mcLSVljczyWLw/111/3343-lipizzan-dr-denton-tx-primary-photo.jpg" alt="3343 Lipizzan Dr, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,165/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3343 Lipizzan Dr, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,507 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 7</div>
+            <div class="row"><span class="label">Deposit</span> Holding fee required before move-in; contact property for amount</div>
+            <div class="row details"><span class="label">Details</span> Leased first-come, first-served; priced to rent and described as moving quickly.</div>
+            <div class="row"><span class="label">Phone</span> (817) 783-4984</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3343-lipizzan-dr-denton-tx/b2dc34c/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2175">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/4725-pantheon-wy-denton-tx-building-photo.jpg" alt="4725 Pantheon Wy, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,175/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4725 Pantheon Wy, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1184 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Spacious 3BR townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 616-6424</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4725-pantheon-wy-denton-tx/0q0n6c0/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2175">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/5116-claudia-dr-denton-tx-building-photo.jpg" alt="5116 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,175/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>5116 Claudia Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1184 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 29</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 854-4088</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/5116-claudia-dr-denton-tx/5ecbdyq/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2175">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/pOJgSTA9iPhKTguG8ssn6hhpieRM9jEW-dkY7pnvrps/115/2019-longmeadow-ct-denton-tx-building-photo.jpg" alt="2019 Longmeadow Ct, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,175/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2019 Longmeadow Ct, Denton, TX 76209</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1870 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $2,175 deposit</div>
+            <div class="row details"><span class="label">Details</span> 2-story in North Denton. 2 living/2 dining areas, corner brick wood-burning fireplace, all bedrooms upstairs, spacious fenced backyard, covered front porch.</div>
+            <div class="row"><span class="label">Phone</span> (469) 383-6649</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2019-longmeadow-ct-denton-tx/2t7rz0b/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2175">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4717-colosseum-wy-denton-tx-primary-photo.jpg" alt="4717 Colosseum Wy, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,175/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4717 Colosseum Wy, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 31</div>
+            <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
+            <div class="row"><span class="label">Phone</span> (972) 544-5384</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4717-colosseum-wy-denton-tx/117qg56/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2190">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/13tpQCQfXJ0M6e_vOnEsd-1iqbB07FHHacJJx63zSIw/115/619-bolivar-st-denton-tx-building-photo.jpg" alt="619 Bolivar St, Denton, TX 76201" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,190/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>619 Bolivar St, Denton, TX 76201</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1712 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> $2,390 deposit</div>
+            <div class="row details"><span class="label">Details</span> Vintage home walking distance to downtown Denton. Remodeled, kitchen &amp; both baths redone in last 4 years. Great for students/small family.</div>
+            <div class="row"><span class="label">Phone</span> (972) 333-4450</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/619-bolivar-st-denton-tx/hfc9mg0/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2195">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/ktnz_fsALKdZQ1adI8NlmefSlTJkgS3dBFuepPL9_ro/115/809-dixon-ln-denton-tx-building-photo.jpg" alt="809 Dixon Ln, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,195/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>809 Dixon Ln, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1729 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Pay just 75% of one month&#x27;s rent as your security deposit.</div>
+            <div class="row details"><span class="label">Details</span> Managed by AMH. 19-month lease special.</div>
+            <div class="row"><span class="label">Phone</span> (817) 769-3759</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/809-dixon-ln-denton-tx/dwdk40k/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/AjwK8GeJ0L7p4RnSC4_ZXwks_iOHpjuAwqKUsvx29Wc/115/4713-fox-sedge-ln-denton-tx-building-photo.jpg" alt="4713 Fox Sedge Ln, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4713 Fox Sedge Ln, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1885 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Must-see, well-maintained 3BR plus study, 2 bath near I-35 &amp; 288, shopping/restaurants. Spacious kitchen, walk-in pantry, decorative lighting, study, wood floors in living, community pool &amp; park.</div>
+            <div class="row"><span class="label">Phone</span> (817) 612-7235</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4713-fox-sedge-ln-denton-tx/kr8efzb/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/tQwFks0y1gSY-_i88x3H7ugu2OixH8U1pMk1HM27fgw/115/412-abram-ave-denton-tx-building-photo.jpg" alt="412 Abram Ave, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>412 Abram Ave, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1572 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 28</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Beall Way community. Spacious layout, fenced yard, 2-car garage, smart home features.</div>
+            <div class="row"><span class="label">Phone</span> (817) 286-7563</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/412-abram-ave-denton-tx/2vgk469/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/l0Fx3kuXl6Q8ZaT75wlPPShIEZOgDtYE-wQscwz3N34/115/2812-paddock-way-denton-tx-building-photo.jpg" alt="2812 Paddock Way, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2812 Paddock Way, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1860 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 12</div>
+            <div class="row"><span class="label">Deposit</span> $2,100 deposit</div>
+            <div class="row details"><span class="label">Details</span> Wheeler Ridge subdivision. One-story, 2-car garage, large family room, big backyard w/covered patio, near FM2499.</div>
+            <div class="row"><span class="label">Phone</span> (310) 200-1653</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2812-paddock-way-denton-tx/k16slv8/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/NwAhvAW5Fhj2wJp82x4Cs6IsLed-cuAkXw5NO2eRMGg/115/206-solar-way-denton-tx-building-photo.jpg" alt="206 Solar Way, Denton, TX 76207" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>206 Solar Way, Denton, TX 76207</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1864 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Oct 1</div>
+            <div class="row"><span class="label">Deposit</span> $2,200 deposit</div>
+            <div class="row details"><span class="label">Details</span> Your Own Acreage in the City - over 1 acre lot, steel-frame construction on slab, big backyard.</div>
+            <div class="row"><span class="label">Phone</span> (214) 727-0686</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/206-solar-way-denton-tx/1t6ecd4/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/gz_bYGvYLpjztMchpL6K4MXn2rhg4LBM5sgjWzSE0PU/115/718-crescent-st-denton-tx-building-photo.jpg" alt="718 Crescent St, Denton, TX 76201" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>718 Crescent St, Denton, TX 76201</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1350 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 1</div>
+            <div class="row"><span class="label">Deposit</span> $2,300 deposit</div>
+            <div class="row details"><span class="label">Details</span> All utilities paid except gas &amp; internet. Quiet family neighborhood near downtown, TWU, UNT. New laminate flooring, new stove/dishwasher/fridge.</div>
+            <div class="row"><span class="label">Phone</span> (817) 454-0499</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/718-crescent-st-denton-tx/qx2hxxw/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/uJOCjDkj1NjeWoDnd_xaK__kLKMmX1S8k30zgllLGB8/111/3024-mason-ave-corinth-tx-primary-photo.jpg" alt="3024 Mason Ave, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>3024 Mason Ave, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,737 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Move-in ready, large living room with fireplace, formal dining, primary bath with separate shower and garden tub, split-bedroom layout.</div>
+            <div class="row"><span class="label">Phone</span> (940) 391-1900</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3024-mason-ave-corinth-tx/4vdg15j/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2200">
+          <div class="photo-wrap">
+            <img src="https://via.placeholder.com/400x260?text=No+Photo" alt="3305 Fairview Dr, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,200/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>3305 Fairview Dr, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,442 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Updated one-story on a corner lot, vaulted ceilings, open floor plan, large windows, fireplace.</div>
+            <div class="row"><span class="label">Phone</span> (214) 897-8254</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3305-fairview-dr-corinth-tx/hblvhk2/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2225">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/x08J0WkXHEnHWRqA0ApMmdyyUsdkzh9WHnNO6SIlkvY/115/5004-claudia-dr-denton-tx-building-photo.jpg" alt="5004 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,225/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>5004 Claudia Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1148 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 18</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 761-0370</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/5004-claudia-dr-denton-tx/pt0s0gr/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2225">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/UFgCSOLnvghuz-KjkpWl-fGz2djnsOvH8Cgh6ogwzYc/115/4812-claudia-dr-denton-tx-building-photo.jpg" alt="4812 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,225/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4812 Claudia Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1148 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Aug 17</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 674-3231</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4812-claudia-dr-denton-tx/8n9x4x1/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2225">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/HreeWeGYhvcD480UgwCLNfupiPCBl3bZOp4p4RMACQw/115/4912-claudia-dr-denton-tx-building-photo.jpg" alt="4912 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,225/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4912 Claudia Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1148 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 3</div>
+            <div class="row"><span class="label">Deposit</span> No Deposit for Qualified Renters (self-guided showings).</div>
+            <div class="row details"><span class="label">Details</span> Carmel Villas community in Denton. Townhome-style.</div>
+            <div class="row"><span class="label">Phone</span> (817) 442-3983</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4912-claudia-dr-denton-tx/n96zyyp/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2240">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/pPfpZALd4UYWP87p_OpRVJUlX35BPLVNFRczXXarW9A/115/6020-moor-hen-drive-denton-tx-building-photo.jpg" alt="6020 Moor Hen Drive, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,240/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>6020 Moor Hen Drive, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1524 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Pay just 75% of one month&#x27;s rent as your security deposit.</div>
+            <div class="row details"><span class="label">Details</span> Managed by AMH. 19-month lease special. Garage parking. AC, dishwasher, microwave, refrigerator, ceiling fans. Denton ISD schools (Pecan Creek Elementary, Bettye Myers Middle, Ryan High).</div>
+            <div class="row"><span class="label">Phone</span> (817) 225-3194</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/6020-moor-hen-drive-denton-tx/p7rcbqr/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2275">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/M0lIU1P2nc2iXUG7z_HlYMa_xBXqE55RyQtLD34QYpI/115/2003-kayewood-dr-denton-tx-building-photo.jpg" alt="2003 Kayewood Dr, Denton, TX 76209" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,275/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>2003 Kayewood Dr, Denton, TX 76209</h3>
+            <div class="specs">3/2/n/a</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> <em>Not stated &mdash; contact property</em></div>
+            <div class="row details"><span class="label">Details</span> Contact for showing; limited listing detail provided.</div>
+            <div class="row"><span class="label">Phone</span> 940-215-1458</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2003-kayewood-dr-denton-tx/ny8xmqm/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2290">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/Sxe5yX0bcG-NGT5aGDLA80Ld5bgQ_swgRzCMOn3gvAs/115/1017-greenbend-dr-denton-tx-building-photo.jpg" alt="1017 Greenbend Dr, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,290/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>1017 Greenbend Dr, Denton, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1866 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> And if your documents are in order, you might even view a home and sign a lease on the same day! Pay just 75% of one month&#x27;s rent as your security deposit.</div>
+            <div class="row details"><span class="label">Details</span> Managed by AMH. 19-month lease special (lock in 12-month rate).</div>
+            <div class="row"><span class="label">Phone</span> (817) 635-1766</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/1017-greenbend-dr-denton-tx/y86xs2r/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2295">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/xc5KegLLdVijV15K5aQfJvUxgwvxhgTuCo-o-wl8x9k/111/2706-parkview-dr-corinth-tx-primary-photo.jpg" alt="2706 Parkview Dr, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,295/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>2706 Parkview Dr, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,424 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Sep 1</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> Single-story, large living room, close to highways/shopping/school, big backyard. Pets considered case-by-case.</div>
+            <div class="row"><span class="label">Phone</span> (972) 740-4108</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2706-parkview-dr-corinth-tx/9wnv804/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2300">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/kqKVpYHPImQkW-WW4SbfT8EC_Dj7M6NF5jExvDtbwZE/111/3913-chimney-rock-dr-denton-tx-primary-photo.jpg" alt="3913 Chimney Rock Dr, Denton, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,300/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>3913 Chimney Rock Dr, Denton, TX 76210</h3>
+            <div class="specs">4 bed / 2 bath &middot; 2,038 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> One-story Summit Oaks home, spacious living room with wood-burning fireplace, flexible second living area (office, media room, or extra gathering space).</div>
+            <div class="row"><span class="label">Phone</span> (214) 437-2544</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/3913-chimney-rock-dr-denton-tx/5lsczvq/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2300">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/G54233hmOOnrjtTXGFcgU3S9BU_j1h3VUmayXhsjZpE/111/4813-wasatch-dr-denton-tx-primary-photo.jpg" alt="4813 Wasatch Dr, Denton, TX 76208" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,300/mo</div>
+            <div class="city-flag flag-denton">Denton</div>
+          </div>
+          <div class="content">
+            <h3>4813 Wasatch Dr, Denton, TX 76208</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,510 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> In the Glenwood Village neighborhood, open floor plan, granite countertops, stainless steel appliances.</div>
+            <div class="row"><span class="label">Phone</span> (817) 271-8583</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/4813-wasatch-dr-denton-tx/m2sp1qj/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="2300">
+          <div class="photo-wrap">
+            <img src="https://images1.apartments.com/i2/K6elwGcprIbR15AEoUXkN5BEpypn8RU8SN3LZRJtAnA/111/2720-windstone-way-corinth-tx-primary-photo.jpg" alt="2720 Windstone Way, Corinth, TX 76210" loading="lazy" onerror="this.src='https://via.placeholder.com/400x260?text=No+Photo'">
+            <div class="price-badge">$2,300/mo</div>
+            <div class="city-flag flag-corinth">Corinth</div>
+          </div>
+          <div class="content">
+            <h3>2720 Windstone Way, Corinth, TX 76210</h3>
+            <div class="specs">3 bed / 2 bath &middot; 1,887 sq ft</div>
+            <div class="row"><span class="label">Available</span> Available Now</div>
+            <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
+            <div class="row details"><span class="label">Details</span> In the Windstone community of Corinth, single-story, vaulted ceilings, designed for everyday living and entertaining.</div>
+            <div class="row"><span class="label">Phone</span> (972) 824-2871</div>
+            <div class="actions">
+              <a class="btn" href="https://www.apartments.com/2720-windstone-way-corinth-tx/kw5fsjb/" target="_blank" rel="noopener">View Listing</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card" data-price="2045">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/3816-carmel-villas-dr-denton-tx-primary-photo.jpg" alt="3816 Carmel Villas Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,045/mo</div>
-      </div>
-      <div class="content">
-        <h3>3816 Carmel Villas Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (469) 373-7643</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3816-carmel-villas-dr-denton-tx/29qvgsb/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2045">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4725-pantheon-wy-denton-tx-primary-photo.jpg" alt="4725 Pantheon Wy, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,045/mo</div>
-      </div>
-      <div class="content">
-        <h3>4725 Pantheon Wy, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (817) 616-6424</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4725-pantheon-wy-denton-tx/0q0n6c0/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2095">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="https://images1.apartments.com/i2/1K_sNl0u_GFTWtY2D9W6ouiPbTE5K33-kr1C2E8zkhI/111/3110-brett-rd-corinth-tx-primary-photo.jpg" alt="3110 Brett Rd, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,095/mo</div>
-      </div>
-      <div class="content">
-        <h3>3110 Brett Rd, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,836 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Sep 11</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Open-concept layout, large eat-in kitchen with island, formal dining, family room with fireplace, split-bedroom floor plan.</div>
-        <div class="row"><span class="label">Phone</span> (214) 558-6488</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3110-brett-rd-corinth-tx/zfwpbpx/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2100">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="https://images1.apartments.com/i2/ypwHNlHZvUhKDZGr7CiBU_vPh7DzZRl8ZvWrxHa4b6s/111/1709-copper-leaf-dr-corinth-tx-primary-photo.jpg" alt="1709 Copper Leaf Dr, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,100/mo</div>
-      </div>
-      <div class="content">
-        <h3>1709 Copper Leaf Dr, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,893 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Open floorplan, master suite with double vanities, separate shower and garden tub, new carpet.</div>
-        <div class="row"><span class="label">Phone</span> (972) 393-9604</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/1709-copper-leaf-dr-corinth-tx/ld3kxsd/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2100">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/kSGD6WrE9zxyLdBDy7CGtq3A1hOlKLA7YYleKsP4BTI/111/3700-camino-real-trail-denton-tx-primary-photo.jpg" alt="3700 Camino Real Trail, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,100/mo</div>
-      </div>
-      <div class="content">
-        <h3>3700 Camino Real Trail, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,812 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Two-story, all bedrooms upstairs for privacy from main living areas, second upstairs living area suitable as game room, media room, or office.</div>
-        <div class="row"><span class="label">Phone</span> (817) 881-2294</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3700-camino-real-trail-denton-tx/ncdckrq/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2100">
-      <div class="photo-wrap">
-        <div class="city-flag">Lake Dallas</div>
-        <img src="" alt="5300 Duchess Ct, Lake Dallas, TX 75065" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,100/mo</div>
-      </div>
-      <div class="content">
-        <h3>5300 Duchess Ct, Lake Dallas, TX 75065</h3>
-        <div class="specs">3 bed / 3 bath &middot; 1,302 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Oct 1</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Tile flooring throughout, granite countertops, large living room, covered back patio, move-in ready.</div>
-        <div class="row"><span class="label">Phone</span> (972) 977-1538</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/5300-duchess-ct-lake-dallas-tx/zflvb6x/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2165">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/qxVryqcbaRPyTG7C3gWTrR1vhD9rm-mcLSVljczyWLw/111/3343-lipizzan-dr-denton-tx-primary-photo.jpg" alt="3343 Lipizzan Dr, Denton, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,165/mo</div>
-      </div>
-      <div class="content">
-        <h3>3343 Lipizzan Dr, Denton, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,507 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Sep 7</div>
-        <div class="row"><span class="label">Deposit</span> Holding fee required before move-in; contact property for amount</div>
-        <div class="row details"><span class="label">Details</span> Leased first-come, first-served; priced to rent and described as moving quickly.</div>
-        <div class="row"><span class="label">Phone</span> (817) 783-4984</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3343-lipizzan-dr-denton-tx/b2dc34c/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2175">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4717-colosseum-wy-denton-tx-primary-photo.jpg" alt="4717 Colosseum Wy, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,175/mo</div>
-      </div>
-      <div class="content">
-        <h3>4717 Colosseum Wy, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Aug 31</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (972) 544-5384</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4717-colosseum-wy-denton-tx/117qg56/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2175">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/5116-claudia-dr-denton-tx-primary-photo.jpg" alt="5116 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,175/mo</div>
-      </div>
-      <div class="content">
-        <h3>5116 Claudia Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2.5 bath &middot; 1,184 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Sep 6</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (817) 854-4088</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/5116-claudia-dr-denton-tx/5ecbdyq/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2200">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/UFgCSOLnvghuz-KjkpWl-fGz2djnsOvH8Cgh6ogwzYc/111/4812-claudia-dr-denton-tx-primary-photo.jpg" alt="4812 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,200/mo</div>
-      </div>
-      <div class="content">
-        <h3>4812 Claudia Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,148 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (817) 674-3231</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4812-claudia-dr-denton-tx/8n9x4x1/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2200">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/YehVGpa_9ei2uvba9iBV9OMwdla0QmdwLNRYpnR6ars/111/2812-paddock-way-denton-tx-primary-photo.jpg" alt="2812 Paddock Way, Denton, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,200/mo</div>
-      </div>
-      <div class="content">
-        <h3>2812 Paddock Way, Denton, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,860 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> One-story in Wheeler Ridge, 2-car garage, close to green space, jogging path and playground, large family room, eat-in kitchen.</div>
-        <div class="row"><span class="label">Phone</span> (310) 200-1653</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/2812-paddock-way-denton-tx/k16slv8/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2200">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="https://images1.apartments.com/i2/uJOCjDkj1NjeWoDnd_xaK__kLKMmX1S8k30zgllLGB8/111/3024-mason-ave-corinth-tx-primary-photo.jpg" alt="3024 Mason Ave, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,200/mo</div>
-      </div>
-      <div class="content">
-        <h3>3024 Mason Ave, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,737 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Move-in ready, large living room with fireplace, formal dining, primary bath with separate shower and garden tub, split-bedroom layout.</div>
-        <div class="row"><span class="label">Phone</span> (940) 391-1900</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3024-mason-ave-corinth-tx/4vdg15j/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2200">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="" alt="3305 Fairview Dr, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,200/mo</div>
-      </div>
-      <div class="content">
-        <h3>3305 Fairview Dr, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,442 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Updated one-story on a corner lot, vaulted ceilings, open floor plan, large windows, fireplace.</div>
-        <div class="row"><span class="label">Phone</span> (214) 897-8254</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3305-fairview-dr-corinth-tx/hblvhk2/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2220">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/pPfpZALd4UYWP87p_OpRVJUlX35BPLVNFRczXXarW9A/111/6020-moor-hen-drive-denton-tx-primary-photo.jpg" alt="6020 Moor Hen Drive, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,220/mo</div>
-      </div>
-      <div class="content">
-        <h3>6020 Moor Hen Drive, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,524 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> 75% of one month's rent as security deposit</div>
-        <div class="row details"><span class="label">Details</span> 19-month lease special advertised to lock in current rate for the lease term.</div>
-        <div class="row"><span class="label">Phone</span> (817) 225-3194</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/6020-moor-hen-drive-denton-tx/p7rcbqr/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2225">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/x08J0WkXHEnHWRqA0ApMmdyyUsdkzh9WHnNO6SIlkvY/111/5004-claudia-dr-denton-tx-primary-photo.jpg" alt="5004 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,225/mo</div>
-      </div>
-      <div class="content">
-        <h3>5004 Claudia Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,148 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (817) 761-0370</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/5004-claudia-dr-denton-tx/pt0s0gr/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2225">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/HreeWeGYhvcD480UgwCLNfupiPCBl3bZOp4p4RMACQw/111/4912-claudia-dr-denton-tx-primary-photo.jpg" alt="4912 Claudia Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,225/mo</div>
-      </div>
-      <div class="content">
-        <h3>4912 Claudia Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,148 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> No deposit for qualified renters</div>
-        <div class="row details"><span class="label">Details</span> Carmel Villas build-to-rent community &mdash; attached 2-car garage, quartz counters, stainless appliances, community pool/hot tub/clubhouse.</div>
-        <div class="row"><span class="label">Phone</span> (817) 442-3983</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4912-claudia-dr-denton-tx/n96zyyp/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2250">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/AjwK8GeJ0L7p4RnSC4_ZXwks_iOHpjuAwqKUsvx29Wc/111/4713-fox-sedge-ln-denton-tx-primary-photo.jpg" alt="4713 Fox Sedge Ln, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,250/mo</div>
-      </div>
-      <div class="content">
-        <h3>4713 Fox Sedge Ln, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,885 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> 3 bedrooms plus a study, located near I-35 and Loop 288, walk-in pantry, wood floors in living area, community pool and park.</div>
-        <div class="row"><span class="label">Phone</span> (817) 612-7235</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4713-fox-sedge-ln-denton-tx/kr8efzb/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2295">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="https://images1.apartments.com/i2/xc5KegLLdVijV15K5aQfJvUxgwvxhgTuCo-o-wl8x9k/111/2706-parkview-dr-corinth-tx-primary-photo.jpg" alt="2706 Parkview Dr, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,295/mo</div>
-      </div>
-      <div class="content">
-        <h3>2706 Parkview Dr, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,424 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Sep 1</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> Single-story, large living room, close to highways/shopping/school, big backyard. Pets considered case-by-case.</div>
-        <div class="row"><span class="label">Phone</span> (972) 740-4108</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/2706-parkview-dr-corinth-tx/9wnv804/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2300">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/kqKVpYHPImQkW-WW4SbfT8EC_Dj7M6NF5jExvDtbwZE/111/3913-chimney-rock-dr-denton-tx-primary-photo.jpg" alt="3913 Chimney Rock Dr, Denton, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,300/mo</div>
-      </div>
-      <div class="content">
-        <h3>3913 Chimney Rock Dr, Denton, TX 76210</h3>
-        <div class="specs">4 bed / 2 bath &middot; 2,038 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> One-story Summit Oaks home, spacious living room with wood-burning fireplace, flexible second living area (office, media room, or extra gathering space). (Note: 4 bedrooms &mdash; exceeds the 3+ bed minimum.)</div>
-        <div class="row"><span class="label">Phone</span> (214) 437-2544</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/3913-chimney-rock-dr-denton-tx/5lsczvq/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2300">
-      <div class="photo-wrap">
-        <div class="city-flag">Corinth</div>
-        <img src="https://images1.apartments.com/i2/K6elwGcprIbR15AEoUXkN5BEpypn8RU8SN3LZRJtAnA/111/2720-windstone-way-corinth-tx-primary-photo.jpg" alt="2720 Windstone Way, Corinth, TX 76210" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,300/mo</div>
-      </div>
-      <div class="content">
-        <h3>2720 Windstone Way, Corinth, TX 76210</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,887 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> In the Windstone community of Corinth, single-story, vaulted ceilings, designed for everyday living and entertaining. (Note: rent is exactly $2,300, at the top of budget.)</div>
-        <div class="row"><span class="label">Phone</span> (972) 824-2871</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/2720-windstone-way-corinth-tx/kw5fsjb/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-price="2300">
-      <div class="photo-wrap">
-        <div class="city-flag">Denton</div>
-        <img src="https://images1.apartments.com/i2/G54233hmOOnrjtTXGFcgU3S9BU_j1h3VUmayXhsjZpE/111/4813-wasatch-dr-denton-tx-primary-photo.jpg" alt="4813 Wasatch Dr, Denton, TX 76208" loading="lazy" onerror="this.onerror=null;this.src='';this.parentElement.classList.add('noimg');this.alt='Photo unavailable';">
-        <div class="price-badge">$2,300/mo</div>
-      </div>
-      <div class="content">
-        <h3>4813 Wasatch Dr, Denton, TX 76208</h3>
-        <div class="specs">3 bed / 2 bath &middot; 1,510 sq ft</div>
-        <div class="row"><span class="label">Available</span> Available Now</div>
-        <div class="row"><span class="label">Deposit</span> Contact property for deposit terms</div>
-        <div class="row details"><span class="label">Details</span> In the Glenwood Village neighborhood, open floor plan, granite countertops, stainless steel appliances. (Note: rent is exactly $2,300, at the top of budget.)</div>
-        <div class="row"><span class="label">Phone</span> (817) 271-8583</div>
-        <div class="actions">
-          <a class="btn" href="https://www.apartments.com/4813-wasatch-dr-denton-tx/m2sp1qj/" target="_blank" rel="noopener">View Listing &rarr;</a>
-        </div>
-      </div>
-    </div>
-</div>
 </div>
 <div class="tab-panel" id="panel-map">
   <div id="map"><div id="mapEl"></div></div>
 </div>
 <footer>
-  Sources: Apartments.com listing search (3 bedrooms &middot; 2+ baths &middot; houses &middot; under $2,300/mo) centered on Corinth, TX &mdash; a small city split by I-35E &mdash; which returns results across the highway corridor spanning Denton, Corinth, and Lake Dallas. A parallel search centered on Lake Dallas confirmed no additional genuine Lake Dallas listings beyond the two already captured. Results were limited to Denton, Lake Dallas, and Corinth addresses; spillover into Argyle, Krum, Shady Shores, Oak Point, and Lewisville was excluded to keep this list scoped to the requested cities. Denton results outside ZIP codes 76208 and 76210 (the two Denton ZIPs adjacent to I-35E) were not included, since they fall further from the highway. One listing (110 Lake Vista Dr, Lake Dallas) was excluded after inspection showed it was a vacant lot for a mobile home, not a house. One listing (4525 Colosseum Wy) appeared twice under different phone numbers &mdash; the more complete listing was kept. Several addresses (4525 Colosseum Wy, 3816 Carmel Villas Dr, 4725 Pantheon Wy, and five more Carmel Villas addresses at higher price points) are separate homes within the same Carmel Villas build-to-rent community and are listed individually since each has its own street address.
+  Sources: Apartments.com listing search (3 bedrooms &middot; 2+ baths &middot; houses &middot; under $2,300/mo) for Denton, TX, combined with parallel searches for Lake Dallas and Corinth, TX. Denton results were broadened from an earlier version of this list (previously limited to ZIP codes 76208/76210 near I-35E) to cover the full city, since I-35, I-35E, I-35W, US 377, and US 380 all run through or across Denton. Of the 64 Denton listings originally identified, 17 had gone stale by Aug 26, 2026 &mdash; their Apartments.com pages now redirect to a generic city search instead of the specific property &mdash; and were excluded as likely no longer available. Results were limited to Denton, Lake Dallas, and Corinth addresses; spillover into Argyle, Krum, Shady Shores, Oak Point, and Lewisville was excluded to keep this list scoped to the requested cities. One listing (110 Lake Vista Dr, Lake Dallas) was excluded after inspection showed it was a vacant lot for a mobile home, not a house. One listing (4525 Colosseum Wy) appeared twice under different phone numbers &mdash; the more complete listing was kept. Several addresses (4525 Colosseum Wy, 3816 Carmel Villas Dr, 4725 Pantheon Wy, and five more Carmel Villas addresses at higher price points) are separate homes within the same Carmel Villas build-to-rent community and are listed individually since each has its own street address.
 </footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
@@ -653,29 +1322,66 @@ filterCards();
 
 // ---------- Map data ----------
 const mapListings = [
-  {city:"Denton", address:"4525 Colosseum Wy, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/eFS719VnQ1nkVkL49VktW-nvwUQXnocfOmqPBEbj81I/111/4525-colosseum-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4525-colosseum-wy-denton-tx/j4j7bj5/", lat:33.1733, lng:-97.0828},
-  {city:"Denton", address:"3816 Carmel Villas Dr, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/3816-carmel-villas-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3816-carmel-villas-dr-denton-tx/29qvgsb/", lat:33.17226, lng:-97.08182},
-  {city:"Denton", address:"4725 Pantheon Wy, Denton, TX 76208", price:2045, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4725-pantheon-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4725-pantheon-wy-denton-tx/0q0n6c0/", lat:33.1729, lng:-97.08181},
-  {city:"Corinth", address:"3110 Brett Rd, Corinth, TX 76210", price:2095, photo:"https://images1.apartments.com/i2/1K_sNl0u_GFTWtY2D9W6ouiPbTE5K33-kr1C2E8zkhI/111/3110-brett-rd-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/3110-brett-rd-corinth-tx/zfwpbpx/", lat:33.1413, lng:-97.0596},
-  {city:"Corinth", address:"1709 Copper Leaf Dr, Corinth, TX 76210", price:2100, photo:"https://images1.apartments.com/i2/ypwHNlHZvUhKDZGr7CiBU_vPh7DzZRl8ZvWrxHa4b6s/111/1709-copper-leaf-dr-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/1709-copper-leaf-dr-corinth-tx/ld3kxsd/", lat:33.14301, lng:-97.08376},
-  {city:"Denton", address:"3700 Camino Real Trail, Denton, TX 76208", price:2100, photo:"https://images1.apartments.com/i2/kSGD6WrE9zxyLdBDy7CGtq3A1hOlKLA7YYleKsP4BTI/111/3700-camino-real-trail-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3700-camino-real-trail-denton-tx/ncdckrq/", lat:33.17327, lng:-97.07789},
-  {city:"Lake Dallas", address:"5300 Duchess Ct, Lake Dallas, TX 75065", price:2100, photo:"", link:"https://www.apartments.com/5300-duchess-ct-lake-dallas-tx/zflvb6x/", lat:33.12485, lng:-97.02779},
-  {city:"Denton", address:"3343 Lipizzan Dr, Denton, TX 76210", price:2165, photo:"https://images1.apartments.com/i2/qxVryqcbaRPyTG7C3gWTrR1vhD9rm-mcLSVljczyWLw/111/3343-lipizzan-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3343-lipizzan-dr-denton-tx/b2dc34c/", lat:33.15707, lng:-97.09866},
-  {city:"Denton", address:"4717 Colosseum Wy, Denton, TX 76208", price:2175, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4717-colosseum-wy-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4717-colosseum-wy-denton-tx/117qg56/", lat:33.17327, lng:-97.08192},
-  {city:"Denton", address:"5116 Claudia Dr, Denton, TX 76208", price:2175, photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/5116-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/5116-claudia-dr-denton-tx/5ecbdyq/", lat:33.17322, lng:-97.07964},
-  {city:"Denton", address:"4812 Claudia Dr, Denton, TX 76208", price:2200, photo:"https://images1.apartments.com/i2/UFgCSOLnvghuz-KjkpWl-fGz2djnsOvH8Cgh6ogwzYc/111/4812-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4812-claudia-dr-denton-tx/8n9x4x1/", lat:33.17329, lng:-97.08123},
-  {city:"Denton", address:"2812 Paddock Way, Denton, TX 76210", price:2200, photo:"https://images1.apartments.com/i2/YehVGpa_9ei2uvba9iBV9OMwdla0QmdwLNRYpnR6ars/111/2812-paddock-way-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/2812-paddock-way-denton-tx/k16slv8/", lat:33.15134, lng:-97.10441},
-  {city:"Corinth", address:"3024 Mason Ave, Corinth, TX 76210", price:2200, photo:"https://images1.apartments.com/i2/uJOCjDkj1NjeWoDnd_xaK__kLKMmX1S8k30zgllLGB8/111/3024-mason-ave-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/3024-mason-ave-corinth-tx/4vdg15j/", lat:33.14174, lng:-97.06087},
-  {city:"Corinth", address:"3305 Fairview Dr, Corinth, TX 76210", price:2200, photo:"", link:"https://www.apartments.com/3305-fairview-dr-corinth-tx/hblvhk2/", lat:33.13931, lng:-97.05284},
-  {city:"Denton", address:"6020 Moor Hen Drive, Denton, TX 76208", price:2220, photo:"https://images1.apartments.com/i2/pPfpZALd4UYWP87p_OpRVJUlX35BPLVNFRczXXarW9A/111/6020-moor-hen-drive-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/6020-moor-hen-drive-denton-tx/p7rcbqr/", lat:33.17021, lng:-97.07538},
-  {city:"Denton", address:"5004 Claudia Dr, Denton, TX 76208", price:2225, photo:"https://images1.apartments.com/i2/x08J0WkXHEnHWRqA0ApMmdyyUsdkzh9WHnNO6SIlkvY/111/5004-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/5004-claudia-dr-denton-tx/pt0s0gr/", lat:33.17325, lng:-97.08034},
-  {city:"Denton", address:"4912 Claudia Dr, Denton, TX 76208", price:2225, photo:"https://images1.apartments.com/i2/HreeWeGYhvcD480UgwCLNfupiPCBl3bZOp4p4RMACQw/111/4912-claudia-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4912-claudia-dr-denton-tx/n96zyyp/", lat:33.17326, lng:-97.08072},
-  {city:"Denton", address:"4713 Fox Sedge Ln, Denton, TX 76208", price:2250, photo:"https://images1.apartments.com/i2/AjwK8GeJ0L7p4RnSC4_ZXwks_iOHpjuAwqKUsvx29Wc/111/4713-fox-sedge-ln-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4713-fox-sedge-ln-denton-tx/kr8efzb/", lat:33.16813, lng:-97.07301},
-  {city:"Corinth", address:"2706 Parkview Dr, Corinth, TX 76210", price:2295, photo:"https://images1.apartments.com/i2/xc5KegLLdVijV15K5aQfJvUxgwvxhgTuCo-o-wl8x9k/111/2706-parkview-dr-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/2706-parkview-dr-corinth-tx/9wnv804/", lat:33.13721, lng:-97.05674},
-  {city:"Denton", address:"3913 Chimney Rock Dr, Denton, TX 76210", price:2300, photo:"https://images1.apartments.com/i2/kqKVpYHPImQkW-WW4SbfT8EC_Dj7M6NF5jExvDtbwZE/111/3913-chimney-rock-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/3913-chimney-rock-dr-denton-tx/5lsczvq/", lat:33.16313, lng:-97.10264},
-  {city:"Corinth", address:"2720 Windstone Way, Corinth, TX 76210", price:2300, photo:"https://images1.apartments.com/i2/K6elwGcprIbR15AEoUXkN5BEpypn8RU8SN3LZRJtAnA/111/2720-windstone-way-corinth-tx-primary-photo.jpg", link:"https://www.apartments.com/2720-windstone-way-corinth-tx/kw5fsjb/", lat:33.15544, lng:-97.068},
-  {city:"Denton", address:"4813 Wasatch Dr, Denton, TX 76208", price:2300, photo:"https://images1.apartments.com/i2/G54233hmOOnrjtTXGFcgU3S9BU_j1h3VUmayXhsjZpE/111/4813-wasatch-dr-denton-tx-primary-photo.jpg", link:"https://www.apartments.com/4813-wasatch-dr-denton-tx/m2sp1qj/", lat:33.16769, lng:-97.078}
-];
+        {city:"Denton",address:"404 Pace Dr, Denton, TX 76209",price:1750,photo:"https://images1.apartments.com/i2/sxt3DCF-SsMEkb1sFIhLB5a9wa-t6tZ_0H4Ms73Ag8Y/115/404-pace-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/404-pace-dr-denton-tx/ge8tvxy/",lat:33.22002,lng:-97.10018},
+        {city:"Denton",address:"3307 Hummingbird Ln, Denton, TX 76209",price:1769,photo:"https://images1.apartments.com/i2/aM2odyj0-qdNEyOYRzNFL_EzAxL61d9CjyJUt7EiPz0/115/3307-hummingbird-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3307-hummingbird-ln-denton-tx/djcxz0h/",lat:33.21591,lng:-97.09492},
+        {city:"Denton",address:"711 N Carroll Blvd, Denton, TX 76201",price:1775,photo:"https://images1.apartments.com/i2/IIcmhvYnWJehGUdg6YA34FORwk0yImYh_YaYyxDiuL4/115/711-n-carroll-blvd-denton-tx-building-photo.jpg",link:"https://www.apartments.com/711-n-carroll-blvd-denton-tx/vxm43td/",lat:33.22094,lng:-97.13746},
+        {city:"Denton",address:"2800 Terry Ct, Denton, TX 76209",price:1855,photo:"https://images1.apartments.com/i2/w25AhRres1pzwTPgaMkN6-0H-JpE7RzdLELf_GzPNhw/115/2800-terry-ct-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2800-terry-ct-denton-tx/zdbxbdw/",lat:33.22767,lng:-97.09961},
+        {city:"Denton",address:"809 Pace Dr, Denton, TX 76209",price:1880,photo:"https://images1.apartments.com/i2/REOuDUs_djpzJe9j_DB4LUTVgTx9P-vGVnKj7UUMcVA/115/809-pace-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/809-pace-dr-denton-tx/2kkt4l8/",lat:33.22446,lng:-97.10089},
+        {city:"Denton",address:"409 Jagoe St, Denton, TX 76201",price:1895,photo:"https://images1.apartments.com/i2/3LCif2HQu87UpnczhiN-Oy893-q42Jay3cEVyyOEym8/115/409-jagoe-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/409-jagoe-st-denton-tx/4f1927l/",lat:33.21813,lng:-97.15084},
+        {city:"Denton",address:"1902 Lee Dr, Denton, TX 76209",price:1900,photo:"https://images1.apartments.com/i2/94umv5wYYCoAF8h4Wa_R1p1ydf5cR_WCoxgxfyLhUNE/115/1902-lee-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1902-lee-dr-denton-tx/p8dcp4t/",lat:33.22139,lng:-97.10799},
+        {city:"Denton",address:"1108 Springcreek Dr, Denton, TX 76210",price:1950,photo:"https://images1.apartments.com/i2/B3KaSp7KIJdXkOqnRoLfRpozYidAluZYI1Kj9T0OIoc/115/1108-springcreek-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1108-springcreek-dr-denton-tx/9pz2qh4/",lat:33.16749,lng:-97.14546},
+        {city:"Denton",address:"2200 Lookout Ln, Denton, TX 76207",price:1950,photo:"https://images1.apartments.com/i2/Pd0CM6oNJkBdr9IQr9rnwZ0C5OT-qJjeqDG5UN-MNhs/115/2200-lookout-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2200-lookout-ln-denton-tx/kssvksc/",lat:33.23704,lng:-97.16692},
+        {city:"Denton",address:"1706 Wisteria St, Denton, TX 76205",price:1950,photo:"https://images1.apartments.com/i2/puHRGY2y5DJAaP1dob6pPuDCxueexpxkoz96nSO9LJA/115/1706-wisteria-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1706-wisteria-st-denton-tx/8jbkdg3/",lat:33.19734,lng:-97.15605},
+        {city:"Denton",address:"2308 Arrowhead Dr, Denton, TX 76207",price:1960,photo:"https://images1.apartments.com/i2/vP5Ok_X2mUnoawyeFjPM9nlaKvAdFnPvWal4etcxebg/115/2308-arrowhead-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2308-arrowhead-dr-denton-tx/68p68dv/",lat:33.23902,lng:-97.1},
+        {city:"Denton",address:"3400 Beatriz Dr, Denton, TX 76207",price:1980,photo:"https://images1.apartments.com/i2/wYUhSvbqI9eIsj0Qz0MdIOUAJIrsYupS881pGx-cZ5A/115/3400-beatriz-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3400-beatriz-dr-denton-tx/r81h6j0/",lat:33.24934,lng:-97.14208},
+        {city:"Denton",address:"5301 Zara Dr, Denton, TX 76207",price:1995,photo:"https://images1.apartments.com/i2/G17nqyPrcbiOs9kTE1uwOo4Mctoku3SJPf9NCjOJ0BY/115/5301-zara-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/5301-zara-dr-denton-tx/l9qp74e/",lat:33.26644,lng:-97.12633},
+        {city:"Denton",address:"3008 Anysa Ln, Denton, TX 76209",price:1995,photo:"https://images1.apartments.com/i2/VL0NsmS-BF-ZtQBzv340fLRw3fU_YpDFCi4KzDLH8pI/115/3008-anysa-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3008-anysa-ln-denton-tx/4frt6nh/",lat:33.226,lng:-97.09787},
+        {city:"Denton",address:"1103 Savage Dr, Denton, TX 76207",price:1995,photo:"https://images1.apartments.com/i2/B9L62IFsUbnMoB-97OtAYfJ5fJbOsYoLEu-5zUmsZSQ/115/1103-savage-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1103-savage-dr-denton-tx/sw3l2r5/",lat:33.25961,lng:-97.11743},
+        {city:"Denton",address:"2809 Newport Ave, Denton, TX 76209",price:1995,photo:"https://images1.apartments.com/i2/G9Vq0T9Ggm0vH9VgJ0bWi9C4ctTq3NDgC1fie6ngxVY/115/2809-newport-ave-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2809-newport-ave-denton-tx/eg0scdm/",lat:33.22501,lng:-97.10034},
+        {city:"Denton",address:"2504 Liberty Ln, Denton, TX 76209",price:2000,photo:"https://images1.apartments.com/i2/5mTR0qFmoeSjOso1flG9iXIX_WkGCYT9xbztooj-LZc/118/2504-liberty-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2504-liberty-ln-denton-tx/vq4f63d/",lat:33.23742,lng:-97.09459},
+        {city:"Denton",address:"1417 Copper Ridge St, Denton, TX 76209",price:2000,photo:"https://images1.apartments.com/i2/sWVbkgYB2vp-L4lm1TL-R5mFhurTM7L6G_wgTK376zc/115/1417-copper-ridge-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1417-copper-ridge-st-denton-tx/x02rd2m/",lat:33.23068,lng:-97.09681},
+        {city:"Denton",address:"1700 Kendolph Dr, Denton, TX 76205",price:2000,photo:"https://images1.apartments.com/i2/CdnOJaqWyVDg8Hee9uAfWgRr4c5qFvGZHLO8rdKXUmE/115/1700-kendolph-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1700-kendolph-dr-denton-tx/2ljxcl9/",lat:33.19716,lng:-97.1524},
+        {city:"Denton",address:"3816 Yellowstone Pl, Denton, TX 76209",price:2015,photo:"https://images1.apartments.com/i2/COOPQkf0Q9QSbIM45K8cr6mxmzYrnRRT4ZYMQTRkPEc/115/3816-yellowstone-pl-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3816-yellowstone-pl-denton-tx/8mqlzk0/",lat:33.25508,lng:-97.1206},
+        {city:"Denton",address:"4525 Colosseum Wy, Denton, TX 76208",price:2045,photo:"https://images1.apartments.com/i2/eFS719VnQ1nkVkL49VktW-nvwUQXnocfOmqPBEbj81I/115/4525-colosseum-wy-denton-tx-building-photo.jpg",link:"https://www.apartments.com/4525-colosseum-wy-denton-tx/j4j7bj5/",lat:33.1733,lng:-97.0828},
+        {city:"Denton",address:"3816 Carmel Villas Dr, Denton, TX 76208",price:2045,photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/3816-carmel-villas-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3816-carmel-villas-dr-denton-tx/29qvgsb/",lat:33.17226,lng:-97.08182},
+        {city:"Denton",address:"2945 Stockton St, Denton, TX 76209",price:2050,photo:"https://images1.apartments.com/i2/sLoGxltNJgimk04Y8OfcFmpbGnachs_kZQGOLc3KLSw/115/2945-stockton-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2945-stockton-st-denton-tx/bq2hkcc/",lat:33.2308,lng:-97.09963},
+        {city:"Corinth",address:"3110 Brett Rd, Corinth, TX 76210",price:2095,photo:"https://images1.apartments.com/i2/1K_sNl0u_GFTWtY2D9W6ouiPbTE5K33-kr1C2E8zkhI/111/3110-brett-rd-corinth-tx-primary-photo.jpg",link:"https://www.apartments.com/3110-brett-rd-corinth-tx/zfwpbpx/",lat:33.1413,lng:-97.0596},
+        {city:"Denton",address:"7912 Canoe Ridge Ln, Denton, TX 76210",price:2100,photo:"https://images1.apartments.com/i2/fG4TWrb0GdzakJvYUgLX8QLPrnZpuGAi4dFWRtzHoOY/115/7912-canoe-ridge-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/7912-canoe-ridge-ln-denton-tx/ql8tbhx/",lat:33.14409,lng:-97.1213},
+        {city:"Denton",address:"3500 Cricket Dr, Denton, TX 76207",price:2100,photo:"https://images1.apartments.com/i2/A6pOa4zVqWhPw6txQ_EeRzdvPas5aYbnjNGgZGUYwuM/115/3500-cricket-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3500-cricket-dr-denton-tx/9b5ene5/",lat:33.25094,lng:-97.15637},
+        {city:"Denton",address:"825 Savage Dr, Denton, TX 76207",price:2100,photo:"https://images1.apartments.com/si2/9EPtjjfbjVg48oc_TL58mMDPaY-Ph6HujW-fFDvTq90TxJVu9BPEQjRU1CT9W4lx/117/image.jpg",link:"https://www.apartments.com/825-savage-dr-denton-tx/eprvt9p/",lat:33.2597,lng:-97.11992},
+        {city:"Denton",address:"3700 Camino Real Trail, Denton, TX 76208",price:2100,photo:"https://images1.apartments.com/i2/kSGD6WrE9zxyLdBDy7CGtq3A1hOlKLA7YYleKsP4BTI/111/3700-camino-real-trail-denton-tx-primary-photo.jpg",link:"https://www.apartments.com/3700-camino-real-trail-denton-tx/ncdckrq/",lat:33.17327,lng:-97.07789},
+        {city:"Corinth",address:"1709 Copper Leaf Dr, Corinth, TX 76210",price:2100,photo:"https://images1.apartments.com/i2/ypwHNlHZvUhKDZGr7CiBU_vPh7DzZRl8ZvWrxHa4b6s/111/1709-copper-leaf-dr-corinth-tx-primary-photo.jpg",link:"https://www.apartments.com/1709-copper-leaf-dr-corinth-tx/ld3kxsd/",lat:33.14301,lng:-97.08376},
+        {city:"Lake Dallas",address:"5300 Duchess Ct, Lake Dallas, TX 75065",price:2100,photo:"",link:"https://www.apartments.com/5300-duchess-ct-lake-dallas-tx/zflvb6x/",lat:33.12485,lng:-97.02779},
+        {city:"Denton",address:"3312 Bent Creek Dr, Denton, TX 76210",price:2105,photo:"https://images1.apartments.com/i2/vL2Km585eDkL4YIsrDyTV5P72gzSe05t_ch9-5j4zsc/115/3312-bent-creek-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/3312-bent-creek-dr-denton-tx/xbzgjmn/",lat:33.16924,lng:-97.14763},
+        {city:"Denton",address:"2325 Northway, Denton, TX 76207",price:2140,photo:"https://images1.apartments.com/i2/7bRdovVym3BONM_rdnuFnRWXFQZ0PuD-fCFGZUnnq8E/115/2325-northway-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2325-northway-denton-tx/p8ez0st/",lat:33.23912,lng:-97.16482},
+        {city:"Denton",address:"2027 Cherrywood Ln, Denton, TX 76209",price:2145,photo:"https://images1.apartments.com/i2/FCRFYFq7R61yNE2CXYE7vZMkra1w7zzFTS_p6gQ2D9I/115/2027-cherrywood-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2027-cherrywood-ln-denton-tx/hdm18p2/",lat:33.23402,lng:-97.12218},
+        {city:"Denton",address:"1509 Canvas Way, Denton, TX 76205",price:2150,photo:"https://images1.apartments.com/i2/4OkwIrplY4EVg7O7BiEaD4FPF-kQsTTNVze126ZGS6g/118/canvas-at-denton-rental-homes-denton-tx-building-photo.jpg",link:"https://www.apartments.com/canvas-at-denton-rental-homes-denton-tx/fxrtt5v/",lat:33.19528,lng:-97.10889},
+        {city:"Denton",address:"5301 Tartan Cir, Denton, TX 76208",price:2150,photo:"https://images1.apartments.com/i2/t-5Kt1ZI2EmQHjkQNHAacml4d4ueP7K3Pg-YsJFv4A0/115/5301-tartan-cir-denton-tx-building-photo.jpg",link:"https://www.apartments.com/5301-tartan-cir-denton-tx/x7qbenn/",lat:33.20647,lng:-97.07531},
+        {city:"Denton",address:"3343 Lipizzan Dr, Denton, TX 76210",price:2165,photo:"https://images1.apartments.com/i2/qxVryqcbaRPyTG7C3gWTrR1vhD9rm-mcLSVljczyWLw/111/3343-lipizzan-dr-denton-tx-primary-photo.jpg",link:"https://www.apartments.com/3343-lipizzan-dr-denton-tx/b2dc34c/",lat:33.15707,lng:-97.09866},
+        {city:"Denton",address:"4725 Pantheon Wy, Denton, TX 76208",price:2175,photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/4725-pantheon-wy-denton-tx-building-photo.jpg",link:"https://www.apartments.com/4725-pantheon-wy-denton-tx/0q0n6c0/",lat:33.1729,lng:-97.08181},
+        {city:"Denton",address:"5116 Claudia Dr, Denton, TX 76208",price:2175,photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/115/5116-claudia-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/5116-claudia-dr-denton-tx/5ecbdyq/",lat:33.17322,lng:-97.07964},
+        {city:"Denton",address:"2019 Longmeadow Ct, Denton, TX 76209",price:2175,photo:"https://images1.apartments.com/i2/pOJgSTA9iPhKTguG8ssn6hhpieRM9jEW-dkY7pnvrps/115/2019-longmeadow-ct-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2019-longmeadow-ct-denton-tx/2t7rz0b/",lat:33.21766,lng:-97.10648},
+        {city:"Denton",address:"4717 Colosseum Wy, Denton, TX 76208",price:2175,photo:"https://images1.apartments.com/i2/10VD1XQyjy9-wkCwCvDiFCaBODVopyicNG7oeRRsNJU/111/4717-colosseum-wy-denton-tx-primary-photo.jpg",link:"https://www.apartments.com/4717-colosseum-wy-denton-tx/117qg56/",lat:33.17327,lng:-97.08192},
+        {city:"Denton",address:"619 Bolivar St, Denton, TX 76201",price:2190,photo:"https://images1.apartments.com/i2/13tpQCQfXJ0M6e_vOnEsd-1iqbB07FHHacJJx63zSIw/115/619-bolivar-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/619-bolivar-st-denton-tx/hfc9mg0/",lat:33.22001,lng:-97.13533},
+        {city:"Denton",address:"809 Dixon Ln, Denton, TX 76207",price:2195,photo:"https://images1.apartments.com/i2/ktnz_fsALKdZQ1adI8NlmefSlTJkgS3dBFuepPL9_ro/115/809-dixon-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/809-dixon-ln-denton-tx/dwdk40k/",lat:33.25809,lng:-97.121},
+        {city:"Denton",address:"4713 Fox Sedge Ln, Denton, TX 76208",price:2200,photo:"https://images1.apartments.com/i2/AjwK8GeJ0L7p4RnSC4_ZXwks_iOHpjuAwqKUsvx29Wc/115/4713-fox-sedge-ln-denton-tx-building-photo.jpg",link:"https://www.apartments.com/4713-fox-sedge-ln-denton-tx/kr8efzb/",lat:33.16813,lng:-97.07301},
+        {city:"Denton",address:"412 Abram Ave, Denton, TX 76207",price:2200,photo:"https://images1.apartments.com/i2/tQwFks0y1gSY-_i88x3H7ugu2OixH8U1pMk1HM27fgw/115/412-abram-ave-denton-tx-building-photo.jpg",link:"https://www.apartments.com/412-abram-ave-denton-tx/2vgk469/",lat:33.25661,lng:-97.1366},
+        {city:"Denton",address:"2812 Paddock Way, Denton, TX 76210",price:2200,photo:"https://images1.apartments.com/i2/l0Fx3kuXl6Q8ZaT75wlPPShIEZOgDtYE-wQscwz3N34/115/2812-paddock-way-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2812-paddock-way-denton-tx/k16slv8/",lat:33.15134,lng:-97.10441},
+        {city:"Denton",address:"206 Solar Way, Denton, TX 76207",price:2200,photo:"https://images1.apartments.com/i2/NwAhvAW5Fhj2wJp82x4Cs6IsLed-cuAkXw5NO2eRMGg/115/206-solar-way-denton-tx-building-photo.jpg",link:"https://www.apartments.com/206-solar-way-denton-tx/1t6ecd4/",lat:33.18925,lng:-97.16322},
+        {city:"Denton",address:"718 Crescent St, Denton, TX 76201",price:2200,photo:"https://images1.apartments.com/i2/gz_bYGvYLpjztMchpL6K4MXn2rhg4LBM5sgjWzSE0PU/115/718-crescent-st-denton-tx-building-photo.jpg",link:"https://www.apartments.com/718-crescent-st-denton-tx/qx2hxxw/",lat:33.22578,lng:-97.13997},
+        {city:"Corinth",address:"3024 Mason Ave, Corinth, TX 76210",price:2200,photo:"https://images1.apartments.com/i2/uJOCjDkj1NjeWoDnd_xaK__kLKMmX1S8k30zgllLGB8/111/3024-mason-ave-corinth-tx-primary-photo.jpg",link:"https://www.apartments.com/3024-mason-ave-corinth-tx/4vdg15j/",lat:33.14174,lng:-97.06087},
+        {city:"Corinth",address:"3305 Fairview Dr, Corinth, TX 76210",price:2200,photo:"",link:"https://www.apartments.com/3305-fairview-dr-corinth-tx/hblvhk2/",lat:33.13931,lng:-97.05284},
+        {city:"Denton",address:"5004 Claudia Dr, Denton, TX 76208",price:2225,photo:"https://images1.apartments.com/i2/x08J0WkXHEnHWRqA0ApMmdyyUsdkzh9WHnNO6SIlkvY/115/5004-claudia-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/5004-claudia-dr-denton-tx/pt0s0gr/",lat:33.17325,lng:-97.08034},
+        {city:"Denton",address:"4812 Claudia Dr, Denton, TX 76208",price:2225,photo:"https://images1.apartments.com/i2/UFgCSOLnvghuz-KjkpWl-fGz2djnsOvH8Cgh6ogwzYc/115/4812-claudia-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/4812-claudia-dr-denton-tx/8n9x4x1/",lat:33.17329,lng:-97.08123},
+        {city:"Denton",address:"4912 Claudia Dr, Denton, TX 76208",price:2225,photo:"https://images1.apartments.com/i2/HreeWeGYhvcD480UgwCLNfupiPCBl3bZOp4p4RMACQw/115/4912-claudia-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/4912-claudia-dr-denton-tx/n96zyyp/",lat:33.17326,lng:-97.08072},
+        {city:"Denton",address:"6020 Moor Hen Drive, Denton, TX 76208",price:2240,photo:"https://images1.apartments.com/i2/pPfpZALd4UYWP87p_OpRVJUlX35BPLVNFRczXXarW9A/115/6020-moor-hen-drive-denton-tx-building-photo.jpg",link:"https://www.apartments.com/6020-moor-hen-drive-denton-tx/p7rcbqr/",lat:33.17021,lng:-97.07538},
+        {city:"Denton",address:"2003 Kayewood Dr, Denton, TX 76209",price:2275,photo:"https://images1.apartments.com/i2/M0lIU1P2nc2iXUG7z_HlYMa_xBXqE55RyQtLD34QYpI/115/2003-kayewood-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/2003-kayewood-dr-denton-tx/ny8xmqm/",lat:33.23324,lng:-97.11883},
+        {city:"Denton",address:"1017 Greenbend Dr, Denton, TX 76210",price:2290,photo:"https://images1.apartments.com/i2/Sxe5yX0bcG-NGT5aGDLA80Ld5bgQ_swgRzCMOn3gvAs/115/1017-greenbend-dr-denton-tx-building-photo.jpg",link:"https://www.apartments.com/1017-greenbend-dr-denton-tx/y86xs2r/",lat:33.16853,lng:-97.14446},
+        {city:"Corinth",address:"2706 Parkview Dr, Corinth, TX 76210",price:2295,photo:"https://images1.apartments.com/i2/xc5KegLLdVijV15K5aQfJvUxgwvxhgTuCo-o-wl8x9k/111/2706-parkview-dr-corinth-tx-primary-photo.jpg",link:"https://www.apartments.com/2706-parkview-dr-corinth-tx/9wnv804/",lat:33.13721,lng:-97.05674},
+        {city:"Denton",address:"3913 Chimney Rock Dr, Denton, TX 76210",price:2300,photo:"https://images1.apartments.com/i2/kqKVpYHPImQkW-WW4SbfT8EC_Dj7M6NF5jExvDtbwZE/111/3913-chimney-rock-dr-denton-tx-primary-photo.jpg",link:"https://www.apartments.com/3913-chimney-rock-dr-denton-tx/5lsczvq/",lat:33.16313,lng:-97.10264},
+        {city:"Denton",address:"4813 Wasatch Dr, Denton, TX 76208",price:2300,photo:"https://images1.apartments.com/i2/G54233hmOOnrjtTXGFcgU3S9BU_j1h3VUmayXhsjZpE/111/4813-wasatch-dr-denton-tx-primary-photo.jpg",link:"https://www.apartments.com/4813-wasatch-dr-denton-tx/m2sp1qj/",lat:33.16769,lng:-97.078},
+        {city:"Corinth",address:"2720 Windstone Way, Corinth, TX 76210",price:2300,photo:"https://images1.apartments.com/i2/K6elwGcprIbR15AEoUXkN5BEpypn8RU8SN3LZRJtAnA/111/2720-windstone-way-corinth-tx-primary-photo.jpg",link:"https://www.apartments.com/2720-windstone-way-corinth-tx/kw5fsjb/",lat:33.15544,lng:-97.068}
+      ];
 
 function fmtPrice(p) { return '$' + p.toLocaleString() + '/mo'; }
 
@@ -702,7 +1408,7 @@ function initTabs() {
 
 // ---------- Map ----------
 function initMap() {
-  const map = L.map('mapEl').setView([33.16, -97.08], 12);
+  const map = L.map('mapEl').setView([33.16, -97.08], 11);
   window.__leafletMap = map;
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors',
